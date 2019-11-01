@@ -25,7 +25,7 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css?<?php echo time(); ?>" rel="stylesheet">
+  <link href="css/style.css?1.0" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: NewBiz
@@ -52,6 +52,7 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#altitude">The Altitude</a></li>
           <li><a href="#about">Prime Tower</a></li>
           <li><a href="#services">Spesifikasi</a></li>
           <li><a href="#portfolio">Unit Plan</a></li>
@@ -78,10 +79,14 @@
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/banner-southgate.png" class="d-block w-100" alt="Southgate Residence">
+          <img src="img/the_altitude_plan.jpg" class="d-block w-100" alt="The Altitude Southgate">
+        </div>
+        <div class="carousel-item">
+          <img src="img/the_altitude_banner.jpg" class="d-block w-100" alt="The Altitude">
         </div>
         <div class="carousel-item">
           <img src="img/prime-tower.png" class="d-block w-100" alt="The Prime Tower">
@@ -99,6 +104,29 @@
   </section><!-- #intro -->
 
   <main id="main">
+
+    <section id="altitude" class="custom-gallery">
+      <div class="container">
+
+        <header class="section-header">
+          <h1>THE ALTITUDE</h1>
+          <p>Apartemen yang terletak di jantung kota yang menawarkan kemudahan akses dan kesenangan yang disesuaikan untuk kaum muda, profesional dan wirausahawan yang mencari gaya hidup yang efisien dalam lingkungan yang terpadu.</p>
+        </header>
+
+        <div class="row portfolio-container">
+
+          <?php for($a=1;$a<=27;$a++) { ?>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <a href="img/altitude/altitude<?php echo $a; ?>.jpg" data-lightbox="altitude" class="link-preview" title="Altitude"><img src="img/altitude/thumbs/altitude<?php echo $a; ?>_tn.jpg" style="width:100%" alt=""></a>
+            </div>
+          </div>
+          <?php } ?>
+
+        </div>
+
+      </div>
+    </section><!-- #about -->
 
     <!--==========================
       About Us Section
